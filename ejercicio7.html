@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"><link rel="stylesheet" 
+    href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio7</title>
+</head>
+
+<body>
+    <header class="main-header">
+        <h1 class="title">Formulario-2</h1>
+    </header>
+    <main class="main-content">
+        <form class="user-form">
+            <fieldset class="fields">
+                <legend>Laboral</legend>
+                <div class="field">
+                    <label>
+                        <input type="checkbox" value="cuenta-ajena" name="cuenta-ajena">
+                        Por cuenta ajena
+                    </label>
+                    <label>
+                        <input type="checkbox" value="autónomo" name="autónomo">
+                        Autónomo
+                    </label>
+                </div>
+                <div class="field">
+                    <legend>¿Alguna vez en el extranjero?</legend>
+                </div>
+                <div aria-labelledby="zone-option">
+                    <label for="zone-option">
+                        <input type="radio" name="zone" value="si">
+                        Sí
+                    </label>
+                    <select name="zone-option" id="zone-option">
+                        <option value="ue-inside">
+                            Dentro de la UE
+                        </option>
+                        <option value="ue-outside">
+                            Fuera de la UE
+                        </option>
+                    </select>
+                </div>
+                <div>
+                    <label for="zone-option">
+                        <input type="radio" name="zone" value="no">
+                        No
+                    </label>
+                </div>
+            </fieldset>
+
+            <fieldset class="fields">
+                <legend>Personal</legend>
+                <div>
+                    <label for=""> Apellidos y Nombre:
+                        <input type="text" placeholder="Fulatino">
+                    </label>
+                </div>
+                
+                <div>
+                    Conocimientos sobre: <br>
+                    <select name="conocimientos" multiple>
+                        <option value="Informática">Informática</option>
+                        <option value="Conducción">Conducción</option>
+                        <option value="Finanzas">Finanzas</option>
+                        <option value="Leyes">Leyes</option>
+                    </select>
+                    
+                </div>
+
+                <button>Enviar Formulario</button>
+        </form>
+    </main>
+
+
+</body>
+
+</html>

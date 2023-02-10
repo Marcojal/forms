@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio6</title>
+</head>
+
+<body>
+    <header class="main-header">
+        <h1 class="title">Formulario 1</h1>
+    </header>
+    <main class="main-content">
+        <form class="user-form">
+            <fieldset class="fields">
+                <legend>Datos fiscales</legend>
+                <div class="field">
+                    <label>
+                        <input type="radio" value="en paro" name="datos-fiscales">
+                        En paro
+                    </label>
+                </div>
+
+                <div class="field">
+                    <label>
+                        <input type="radio" value="Autónomo" name="datos-fiscales">
+                        Autónomo
+                    </label>
+                </div>
+
+                <div class="field">
+                    <label>
+                        <input type="radio" value="por c. ajena" name="datos-fiscales">
+                        Por c. ajena
+                    </label>
+                </div>
+
+            </fieldset>
+            <fieldset class="fields">
+                <legend>Datos personales</legend>
+                <div class="field">
+                    <label for="name">Nombre:</label>
+                    <input required placeholder="Pepito" type="text" name="user-name" id="name">
+                </div>
+                <div class="field">
+                    <label for="last-name">Apellidos:</label>
+                    <input placeholder="de los palotes" type="text" name="last-name" id="last-name">
+                </div>
+                <div class="field">
+                    <label for="salary">Sueldo:</label>
+                    <select name="salary" id="salary">
+                        <option value="mas-400">
+                            más de 400€
+                        </option>
+                        <option value="menos-400">
+                            menos de 400€
+                        </option>
+                        <option value="V">
+                            Variables
+                        </option>
+                    </select>
+                </div>
+                <fieldset class="field">
+                    <div>
+                        <label>
+                            <input name="profesional-illness" type="checkbox">
+                            Con enfermedad profesional
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <input name="parents" type="checkbox">
+                            Con padres a cargo
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <input name="sons" type="checkbox">
+                            Con hijos a cargo
+                        </label>
+                    </div>
+                </fieldset>
+            </fieldset>
+
+            <button>Enviar Formulario</button>
+        </form>
+    </main>
+</body>
+
+</html>

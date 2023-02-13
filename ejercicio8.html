@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio6</title>
+</head>
+
+
+<body>
+    <header class="main-header">
+        <h1 class="title">Formulario 1</h1>
+    </header>
+    <main class="main-content">
+        <form class="user-form">
+            <fieldset class="fields">
+                <legend>Rellenar</legend>
+                <div class="field">
+                    <label>
+                        <input type="radio" value="idioma-ingles" name="idioma">
+                        Inglés
+                    </label>
+                </div>
+                <div class="field">
+                    <label>
+                        <input type="radio" value="idioma-aleman" name="idioma">
+                        Alemán
+                    </label>
+                </div>
+                <div class="field">
+                    <label>
+                        <input type="radio" value="idioma-frances" name="idioma">
+                        Francés
+                    </label>
+                </div>
+                <div class="field">
+                    <select name="conector">
+                        <option value="usb">USB</option>
+                        <option value="paralelo">Paralelo</option>
+                        <option value="ps2">PS2</option>
+                    </select>
+                </div>
+                <div class="field">
+                    <label for="name">Nombre</label>
+                    <input placeholder="Pepito" type="text" name="user-name" id="name">
+                </div>
+                <div class="field">
+                    <label for="last-name">Apellidos</label>
+                    <input placeholder="de los palotes" type="text" name="last-name" id="last-name">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Indique sus preferencias por favor</legend>
+                <div>
+                    <select name="sexo" multiple>
+                        <option value="hombre">Hombre</option>
+                        <option value="mujer">Mujer</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="sexo">
+                        <input type="checkbox" name="sexo" Value="sexo-mujer">Mujer
+                    </label>
+                </div>
+                <div>
+                    <label for="sexo">
+                        <input type="checkbox" name="sexo" Value="sexo-hombre">Hombre
+                    </label>
+                </div>
+                <div>
+                    <label for="date">Elige una fecha
+                        <input type="date" name="date">
+                    </label>
+                </div>
+            </fieldset>
+            <button>Enviar Formulario</button>
+</body>
+
+</html>
